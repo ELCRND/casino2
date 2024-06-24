@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="vQfaN06SrKneKFSirxhMQa2NrsLoJTLuyFR0ZbLJ">
+
+    <title>Gorsad</title>
+        <link href="http://gorsad39.ru/css/home-page.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="/js/app.js" defer></script> 
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="http://gorsad39.ru/css/app.css" rel="stylesheet">
+        </head>
+<body>
+<div id="app" data-app class="frontend">
+    <header>
+        <div class="d-flex justify-content-end">
+            <div id="header-top-wr">
+                <div id="contacts">
+                    <span class="contacts-title">Контакты</span>
+                    <div>
+                        <span class="mdi mdi-phone-outline"></span>
+                        <span>+7 (4012) 52-21-11</span>
+                    </div>
+                    <div>
+                        <span class="mdi mdi-email-open-outline"></span>
+                        <span>
+                            <a class="mail" href="mailto:">mail@gorsad39.ru</a></span>
+                    </div>
+                    <div>
+                        <span class="mdi mdi-clock-time-four-outline"></span>
+                        <span>Пн-Пт 9.00 - 18.00</span>
+                    </div>
+                </div>
+                <div id="user-links">
+                    <span class="mdi mdi-magnify mdi-flip-h"></span>
+                    <span class="mdi mdi-cart-outline"></span>
+                    <span class="mdi mdi-account-outline"></span>
+                </div>
+            </div>
+        </div>
+        <div id="center">
+            <a href="/" class="logo-link">
+    <div id="logo">
+        <img src="/storage/images/public/logo.png" alt="">
+        <div id="logo-text">
+            <span id="logo-title">Городской садовник</span>
+            <span id="logo-description">Ландшафтные работы и декоративные растения </span>
+        </div>
+    </div>
+</a>
+
+            <div id="search">
+                <form id="search-form" action="/catalog" method="POST">
+                    <input type="hidden" name="_token" value="vQfaN06SrKneKFSirxhMQa2NrsLoJTLuyFR0ZbLJ">                    <input type="text" name="product_name" id="" placeholder="Поиск" value="">
+                    <span id="search-btn" class="search-icon" onclick="const form = document.getElementById('search-form'); form.submit()"></span>
+                    <input type="submit" style="display: none"  />
+                </form>
+            </div>
+        </div>
+        <nav>
+            <a class="nav-link" href="http://gorsad39.ru/catalog">Каталог</a>
+            <a class="nav-link" href="/services">Услуги</a>
+            <a class="nav-link" href="http://gorsad39.ru/projects">Наши работы</a>
+            <a class="nav-link" href="http://gorsad39.ru/knowhow">Советы</a>
+            <a class="nav-link" href="http://gorsad39.ru/design">Дизайн</a>
+            <a class="nav-link" href="#">Вакансии</a>
+        </nav>
+    </header>
+        <div id="home-page">
+        <div id="home-top-block-wr">
+            <div id="home-top-block-inner" class="container-pd">
+                <div id="main-text">
+                    Саженцы деревьев и кустарников в Калининграде и области
+                </div>
+                <div id="desc-text">
+                    Преобразите свое пространство с помощью профессиональных услуг и широкого ассортимента деревьев и
+                    кустарников компании «Городской Садовник»
+                </div>
+                <button class="btn-green" onclick="window.location.assign('/catalog')">Перейти в каталог</button>
+            </div>
+        </div>
+        <div class="body-bg">
+            <div id="suited-for" class="container-pd">
+                <div id="suited-for-caption">
+                    Подходят<br>
+                    для разных целей
+                </div>
+                <div id="suited-for-list">
+                    <div id="industrial" class="suited-for-item">
+                        <span class="suited-for-icon"></span>
+                        <h4>Промышленные объекты</h4>
+                        <div class="suited-for-description">Подходит для таких-то объектов, которые сталкиваются с тем
+                            что,
+                            короткое описание
+                        </div>
+                    </div>
+                    <div id="schools" class="suited-for-item">
+                        <span class="suited-for-icon"></span>
+                        <h4>Школы</h4>
+                        <div class="suited-for-description">Подходит для таких-то объектов, которые сталкиваются с тем
+                            что,
+                            короткое описание
+                        </div>
+                    </div>
+                    <div id="private" class="suited-for-item">
+                        <span class="suited-for-icon"></span>
+                        <h4>Частные проекты</h4>
+                        <div class="suited-for-description">Подходит для таких-то объектов, которые сталкиваются с тем
+                            что,
+                            короткое описание
+                        </div>
+                    </div>
+                    <div id="complex" class="suited-for-item">
+                        <span class="suited-for-icon"></span>
+                        <h4>Комплексное озеленение</h4>
+                        <div class="suited-for-description">Подходит для таких-то объектов, которые сталкиваются с тем
+                            что,
+                            короткое описание
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home-landing-form1">
+            <form class="home-landing-form1-inner container-pd">
+                    <input type="hidden" name="_token" value="vQfaN06SrKneKFSirxhMQa2NrsLoJTLuyFR0ZbLJ">                    <div><input type="text" name="name" placeholder="Имя" required></div>
+                    <div><input type="text" name="phone" placeholder="Телефон"></div>
+                    <div><input type="text" name="email" placeholder="E-mail" required></div>
+                    <input type="hidden" name="message" value="Запрос на обратную связь">
+                    <button type="button" class="btn-green no-border-radius" v-submit-form>Обсудить проект</button>
+            </form>
+                    
+        </div>
+        <div class="body-bg">
+            <div id="catalog-block" class="home-block container-pd">
+                <div class="block-description">
+                    <div class="d-flex flex-column">
+                        <h4>Наш каталог</h4>
+                        <div class="fz18">
+                            Каталог разработан для удобства использования как новичками,
+                            так и специалистами из отдела ПТО, что позволяет вам выбрать идеальное растение для любого
+                            пространства и условий выращивания.
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/storage/images/public/homepage/catalog-trees.png" alt="">
+                    </div>
+                </div>
+                <span class="italic-link">В каталог</span>
+                <div id="catalog-links" class="links-list">
+                    <div id="list-trees" class="catalog-link home-shop-link">
+                        <div class="catalog-link-title link-title">
+                            Лиственные деревья
+                            и кустарники
+                        </div>
+                    </div>
+                    <div id="hvoy-trees" class="catalog-link home-shop-link">
+                        <div class="catalog-link-title link-title">
+                            Хвойные деревья
+                        </div>
+                    </div>
+                    <div id="form-trees" class="catalog-link home-shop-link">
+                        <div class="catalog-link-title link-title">
+                            Формовые деревья
+                        </div>
+                    </div>
+                    <div id="fruit-trees" class="catalog-link home-shop-link">
+                        <div class="catalog-link-title link-title">
+                            Фруктовые деревья
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="services-block" class="home-block container-pd">
+                <div class="block-description">
+                    <div class="d-flex flex-column">
+                        <h4>Какие услуги мы оказываем?</h4>
+                        <div class="fz18">
+                            Дополнительно мы можем предоставить вам различные услуги по проектированию, планировочным
+                            работам, озеленению, устройству газонов и дорожек, обслуживанию и бесплатным консультациям!
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/storage/images/public/homepage/services-trees.png" alt="">
+                    </div>
+                </div>
+                <span class="italic-link curpointer" onclick="window.location.assign('/services')">Наши услуги</span>
+                <div id="services-links" class="links-list">
+                    <div id="planting" class="service-link home-shop-link">
+                        <div class="service-link-title link-title">
+                            <h4>Высадка деревьев</h4>
+                            <div>Ищете, кто может помочь в высадке/ пересадке деревьев?</div>
+                            <button class="btn-green w-100 no-border-radius">1000 &#8381;</button>
+                        </div>
+                    </div>
+                    <div id="landscaping" class="service-link home-shop-link">
+                        <div class="service-link-title link-title">
+                            <h4>Озеленение</h4>
+                            <div>Ищете, кто может помочь в высадке/ пересадке деревьев?</div>
+                            <button class="btn-green w-100 no-border-radius">1000 &#8381;</button>
+                        </div>
+                    </div>
+                    <div id="leveling" class="service-link home-shop-link">
+                        <div class="service-link-title link-title">
+                            <h4>Выравнивание участка</h4>
+                            <div>Ищете, кто может помочь в высадке/ пересадке деревьев?</div>
+                            <button class="btn-green w-100 no-border-radius">1000 &#8381;</button>
+                        </div>
+                    </div>
+                    <div id="cutting" class="service-link home-shop-link">
+                        <div class="service-link-title link-title">
+                            <h4>Удаление поросли</h4>
+                            <div>Ищете, кто может помочь в высадке/ пересадке деревьев?</div>
+                            <button class="btn-green w-100 no-border-radius">1000 &#8381;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="helpful" class="container-pd">
+                <div class="heading">Это может быть полезно</div>
+                <div id="tree-care" class="info-block">
+                    <div class="info-block-text-wr">
+                        <div class="info-block-text">
+                            <div class="heading">
+                                Как ухаживать за деревьями
+                            </div>
+                            <div>
+                                Мы собрали для вас передовой опыт в уходе за деревьями от передовых специалистов, а также
+                                разработали удобные гайды.
+                            </div>
+                        </div>
+                        <span class="italic-link curpointer" onclick="window.location.assign('/knowhow')">Советы</span>
+                    </div>
+
+                    <img src="/storage/images/public/homepage/tree-care-bg.jpg" alt="">
+                </div>
+                <div id="styles">
+                    <div class="info-block">
+                        <img src="/storage/images/public/homepage/styles-bg.jpg" alt="">
+                        <div class="info-block-text-wr">
+                            <div class="info-block-text">
+                                <div class="heading">
+                                    Стили в ландшафтном дизайне
+                                </div>
+                                <div>
+                                    Познакомьтесь со всеми основными стилями ландшафтного дизайна и выберите лучшего
+                                    специалиста для себя и своего дома или другого пространства.
+                                </div>
+                            </div>
+                            <span class="italic-link curpointer" onclick="window.location.assign('/design')">Дизайн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="vacancies" class="container-pd">
+                <div id="vacancies-form">
+                    <div class="text-center">
+                        <div class="heading">Вакансии</div>
+                        <div class="form-description">
+                            Ищем рабочих для ландшафтных работ и ландшафтных дизайнеров
+                        </div>
+                    </div>
+                    <form>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="text" name="email" placeholder="E-mail">
+                        <input type="text" name="message" placeholder="Комментарий">
+                        <button type="button" class="btn-green no-border-radius" v-submit-form>Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div id="clients" class="container-pd">
+                <div class="heading">Наши клиенты</div>
+                <div id="clients-slider">
+                    <div class="client-block">
+                        <img src="/storage/images/public/homepage/clients/oooksk.png" alt="">
+                    </div>
+                    <div class="client-block">
+                        <img src="/storage/images/public/homepage/clients/delta.png" alt="">
+                    </div>
+                    <div class="client-block">
+                        <img src="/storage/images/public/homepage/clients/rzd.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="landing-form-wr">
+            <div id="landing-form" class="container-pd">
+                <div id="form-description-wr">
+                    <div class="heading">Остались вопросы?</div>
+                    <div class="form-description">
+                        Оставьте свои контакты, и мы перезвоним вам или напишем в ближайшее время!
+                    </div>
+                </div>
+                <form>
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="text" name="phone" placeholder="Телефон">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="hidden" name="message" value="Запрос на обратную связь">
+                    <div id="checkboxes">
+                        <label class="checkbox-container">Позвоните мне
+                            <input type="checkbox" name="" id="" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">Напишите мне
+                            <input type="checkbox" name="" id="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <button type="button" class="btn-green no-border-radius w-75" v-submit-form>Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+        <footer>
+        <div id="footer-content" class="container-pd bg-white">
+            <div class="footer-column">
+                <a href="/" class="logo-link">
+    <div id="logo">
+        <img src="/storage/images/public/logo.png" alt="">
+        <div id="logo-text">
+            <span id="logo-title">Городской садовник</span>
+            <span id="logo-description">Ландшафтные работы и декоративные растения </span>
+        </div>
+    </div>
+</a>
+
+                <span class="w-75 mt-4">
+                    Комплексное озеленение
+                    и саженцы оптом в Калининграде
+                    и области
+                </span>
+            </div>
+            <div class="footer-column flex-grow-1">
+                <span class="footer-col-title">Узнай больше</span>
+                <span>
+                    <a class="footer-link" href="http://gorsad39.ru/catalog">Деревья</a>
+                </span>
+                <span>
+                    <a class="footer-link" href="http://gorsad39.ru/services">Услуги</a>
+                </span>
+                <span>
+                    <a class="footer-link" href="http://gorsad39.ru/projects">Проекты</a>
+                </span>
+                <span>
+                    <a class="footer-link" href="http://gorsad39.ru/knowhow">Советы</a>
+                </span>
+                <span>
+                    <a class="footer-link" href="http://gorsad39.ru/design">Дизайн</a>
+                </span>
+            </div>
+            <div class="footer-column">
+                <span class="footer-col-title">Контакты</span>
+                <div class="d-flex align-items-center">
+                    <span class="footer-icon footer-icon-marker"></span>
+                    <span>
+                        ул. Еловая аллея, д26, Калининград,
+                        Россия, 236038
+                    </span>
+                </div>
+                <div class="d-flex">
+                    <span class="footer-icon footer-icon-phone"></span>
+                    <span>+7 (4012) 71-95-11</span>
+                </div>
+                <div class="d-flex">
+                    <span class="footer-icon footer-icon-email"></span>
+                    <span><a class="mail" href="mailto:mail@gorsad39.ru">mail@gorsad39.ru</a></span>
+                </div>
+
+            </div>
+            <div class="footer-column">
+                <span class="footer-col-title">Оставайтесь в курсе новостей</span>
+                <span>Подпишитесь на нашу рассылку</span>
+                <input type="text" id="subscribe" placeholder="E-mail">
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    
+
+    document.getElementById("search-btn").addEventListener("click", function () {
+        alert(1)
+    form.submit();
+    });
+</script>
+</body>
+</html>
